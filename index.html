@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أولاد عاشور | محل العجل</title>
+  <meta name="description" content="أولاد عاشور - متجر العجل والدراجات">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="liquid-bg">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+  <header class="header">
+    <a class="brand" href="#home">
+      <div class="brand-mark">🚲</div>
+      <div>
+        <strong>أولاد عاشور</strong>
+        <span>Ali Ashour</span>
+      </div>
+    </a>
+
+    <nav>
+      <a href="#home">الرئيسية</a>
+      <a href="#products">العجل</a>
+      <a href="#about">عن المحل</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+    <button id="cartButton" class="cart-button">
+      🛒 السلة <span id="cartCount">0</span>
+    </button>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>اختار عجلتك<br><span>مع اولاد عاشور</span></h1>
+        <p>تصفح الموديلات والمواصفات، واختار العجلة المناسبة لك.</p>
+        <a class="btn primary" href="#products">شاهد العجل</a>
+      </div>
+    </section>
+
+    <section id="products" class="section">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">OUR BIKES</span>
+          <h2>اختار نوع العجلة</h2>
+        </div>
+        <p>اختار القسم اللي عايز تشوف العجل الموجود فيه.</p>
+      </div>
+
+
+      <div class="categories-grid">
+        <button class="category-box" data-category="سرعات">
+          <span class="category-icon">⚡</span>
+          <strong>عجل سرعات</strong>
+          <small>Road & Speed</small>
+        </button>
+
+        <button class="category-box" data-category="اسكوتر كهرباء">
+          <span class="category-icon">🛴</span>
+          <strong>اسكوتر كهرباء</strong>
+          <small>Electric Scooters</small>
+        </button>
+
+        <button class="category-box" data-category="عجل عادي">
+          <span class="category-icon">🚲</span>
+          <strong>عجل عادي</strong>
+          <small>Regular Bikes</small>
+        </button>
+
+        <button class="category-box" data-category="دبابه">
+          <span class="category-icon">🏍️</span>
+          <strong>عجل دبابه</strong>
+          <small>Sport Bikes</small>
+        </button>
+        <button class="category-box" data-category="حركات">
+          <span class="category-icon">🔥</span>
+          <strong>عجل حركات</strong>
+          <small>Stunt Bikes</small>
+        </button>
+        <button class="category-box" data-category="أطفال 2-5">
+          <span class="category-icon">🧒</span>
+          <strong>أطفال من 2 الي  5 سنوات</strong>
+          <small>Kids 2-5</small>
+        </button>
+        <button class="category-box" data-category="أطفال 4-8">
+          <span class="category-icon">🚲</span>
+          <strong>أطفال من 4 الي 8 سنوات</strong>
+          <small>Kids 4-8</small>
+        </button>
+        <button class="category-box" data-category="اطفال 6-12">
+          <span class="category-icon">🚴</span>
+          <strong>أطفال من 6-12 سنوات</strong>
+          <small>Kids 6-12</small>
+        </button>
+      </div>
+      <button id="showAll" class="show-all">عرض كل العجل</button>
+
+
+      <div class="section-head products-title">
+        <div>
+          <span class="eyebrow">OUR BIKES</span>
+          <h2>العجل المتوفر</h2>
+        </div>
+        <p>اضغط على أي عجلة لعرض كل التفاصيل.</p>
+      </div>
+
+      <div id="productsGrid" class="products-grid"></div>
+    </section>
+
+    <section id="about" class="about section">
+      <div>
+        <span class="eyebrow">ABOUT US</span>
+        <h2>أولاد عاشور</h2>
+        <p>
+          محل متخصص في الدراجات، وهدفنا نوفر موديلات مناسبة لمختلف الاستخدامات
+          مع عرض المواصفات بشكل واضح وسهل للعميل . المجال مجالنا وهتجيلنا هتجيلنا ☝️
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <span class="eyebrow">CONTACT</span>
+      <h2>تواصل مع أولاد عاشور</h2>
+      <div class="contact-buttons">
+        <a class="contact-btn whatsapp" href="https://wa.me/201001756838" target="_blank" rel="noopener">
+          واتساب
+        </a>
+        <a class="contact-btn facebook" href="https://www.facebook.com/share/1Eb8JDjfgR/" target="_blank" rel="noopener">
+          فيسبوك
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 أولاد عاشور — جميع الحقوق محفوظة</p>
+  </footer>
+
+
+  <div id="cartModal" class="modal" aria-hidden="true">
+    <div class="cart-box">
+      <button id="closeCart" class="close" aria-label="إغلاق">×</button>
+      <div class="cart-info">
+        <span class="eyebrow">SHOPPING CART</span>
+        <h2>سلة الطلبات</h2>
+        <div id="cartItems"></div>
+        <div id="emptyCart" class="empty-cart">السلة فاضية حاليًا.</div>
+        <button id="sendCartWhatsapp" class="btn primary cart-whatsapp">
+          📱 إرسال الطلب على واتساب
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="productModal" class="modal" aria-hidden="true">
+    <div class="modal-box">
+      <button id="closeModal" class="close" aria-label="إغلاق">×</button>
+      <img id="modalImage" src="" alt="">
+      <div class="modal-info">
+        <span id="modalCategory" class="tag"></span>
+        <h2 id="modalName"></h2>
+        <p id="modalDescription"></p>
+        <div id="modalSpecs" class="specs"></div>
+        <button id="modalAddCart" class="btn add-cart modal-add-cart">
+          🛒 أضف العجلة إلى السلة
+        </button>
+        <a id="modalWhatsapp" class="btn primary whatsapp-order" target="_blank" rel="noopener">
+          📱 اسأل عن العجلة على واتساب
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
